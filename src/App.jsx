@@ -1,3 +1,4 @@
+import { Card } from "./components/Card";
 import { GameHeader } from "./components/GameHeader";
 
 
@@ -26,9 +27,9 @@ function App() {
   <div className="App"> 
   <GameHeader score={3} moves={10} /> 
 
-<div className="card-grid">
+<div className="cards-grid">
 {cardValues.map((card) => (
-
+<Card card={card} />
 
 
 ))}
